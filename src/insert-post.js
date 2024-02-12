@@ -44,9 +44,8 @@ app.post("/insert", (req, res) => {
             res.end();
         });
     })
-
 })
-
+// Listen on 4100
 app.listen(4100, () => {
     console.log("Server is listennig...")
 });
