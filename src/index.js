@@ -14,11 +14,6 @@ mongoClient.connect("mongodb://127.0.0.1:27017")
 /* After connecting with the mongodb database. There might be so many 
 databases and collections. From them which database we want to use, this can handeled by clientObj object. */
 console.log(`Connected successfully...`);
-let database = clientObj.db("REACT_BACKEND");
-database.collection("products").find({}).toArray().then((documents)=>{
-    console.log(documents);
-})
-
 })
 .catch((errorObj)=>{
     /* If conncetion faild then error object can return the errorObj object */
