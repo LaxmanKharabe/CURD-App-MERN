@@ -1,9 +1,12 @@
 const express = require("express");
 const mongoCLient = require("mongodb").MongoClient;
+const cors = require("cors");
+
 const conStr = "mongodb://localhost:27017";
+const cors = require("cors");
 const app = express();
 
-const cors = require("cors");
+
 
 app.use(cors());
 app.use(express.urlencoded({
